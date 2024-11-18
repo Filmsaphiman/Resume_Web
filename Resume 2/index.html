@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Resume</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+  <style>
+    /* เส้นแบ่งระหว่างหัวข้อ */
+    .section-divider {
+      border: 0;
+      height: 1px;
+      background: linear-gradient(to right, #ddd, #bbb, #ddd); /* เส้นไล่โทนสี */
+      margin: 30px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+    <div class="container-fluid">
+      <a class="navbar-brand fw-bold" href="#">My Resume</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about-me">About Me</a></li>
+          <li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center py-5 bg-light">
+    <div class="container d-flex flex-column align-items-center">
+      <img class="rounded-circle shadow mb-3" src="Me.jpg" alt="ตัวฉัน" style="width: 150px; height: 150px;">
+      <h1 class="fw-bold">Kitsirirat Saphiman</h1>
+      <p class="text-muted">AI Developer | Software Developer | Back-End</p>
+      <p>Branch: Engineering and technology</p>
+      <p>University: | <a href="http://pim.ac.th" target="_blank" class="gold-link">Panyapiwat Institute of Management</a></p>
+      <p class="lead">"Hello, my name is Kitsirirat Saphiman. I am skilled in programming, problem-solving, and teamwork."</p>
+    </div>
+  </header>
+
+  <!-- About Me Section -->
+  <section id="about-me" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4">About Me</h2>
+      <p class="text-center">I aspire to be an AI Developer and Software Developer with a strong commitment to enhancing my skills in AI technology, particularly in Back-End Development. I am passionate about innovation and creating cutting-edge solutions that elevate user experiences and solve complex problems. I believe that the advancement of AI technology will play a crucial role in transforming the world in the future, and I want to be a part of this process by developing innovations that meet the needs of society.</p>
+    </div>
+    <hr class="section-divider">
+  </section>
+
+  <!-- Education Section -->
+  <section id="education" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4">Education</h2>
+      <div class="card shadow border-0 mb-3">
+        <div class="card-body">
+          <h5 class="card-title">Panyapiwat Institute of Management</h5>
+          <p class="card-text">Faculty of Engineering and Technology, Majoring in Computer Engineering and Artificial Intelligence</p>
+        </div>
+      </div>
+      <div class="card shadow border-0">
+        <div class="card-body">
+          <h5 class="card-title">Mahasarakham University Demonstration School</h5>
+          <p class="card-text">High School Diploma</p>
+        </div>
+      </div>
+    </div>
+    <hr class="section-divider">
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills" class="py-5">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4">Skills</h2>
+      <div class="row">
+        <div class="col-md-3 text-center">
+          <img src="python.png" alt="Python" class="img-fluid mb-3" style="height: 100px;">
+          <h5>Python</h5>
+          <p>Beginner</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="ML.png" alt="Machine Learning" class="img-fluid mb-3" style="height: 100px;">
+          <h5>Machine Learning</h5>
+          <p>Beginner</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="cv.png" alt="Image Processing" class="img-fluid mb-3" style="height: 100px;">
+          <h5>Image Processing</h5>
+          <p>Beginner</p>
+        </div>
+        <div class="col-md-3 text-center">
+          <img src="microsoft.png" alt="Microsoft Office" class="img-fluid mb-3" style="height: 100px;">
+          <h5>Microsoft Office</h5>
+          <p>Beginner</p>
+        </div>
+      </div>
+    </div>
+    <hr class="section-divider">
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="py-5 bg-light">
+    <div class="container">
+      <h2 class="fw-bold text-center mb-4">Contact</h2>
+      <ul class="list-unstyled text-center">
+        <li>Email: 66523002648@stu.pim.ac.th</li>
+        <li>Phone: 090-123-4567</li>
+        <li>Address: M-House Pak Kret 28</li>
+        <li>GitHub: <a href="https://github.com/Filmsaphiman" target="_blank">Filmsaphiman</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="bg-primary text-white text-center py-3">
+    &copy; 2024 Kitsirirat Saphiman. All rights reserved.
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

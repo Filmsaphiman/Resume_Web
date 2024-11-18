@@ -1,0 +1,48 @@
+/* General Styles */
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: #f8f9fa;
+}
+
+h1, h2, h3, h5 {
+  font-family: 'Poppins', sans-serif;
+}
+
+footer {
+  font-size: 14px;
+}
+
+/* Header */
+header {
+  background: linear-gradient(to right, #007bff, #6c757d);
+  color: white;
+}
+
+header img {
+  border: 5px solid white;
+}
+
+/* Cards */
+.card {
+  border-radius: 8px;
+}
+
+
+/* เส้นแบ่งระหว่างหัวข้อ */
+.section-divider {
+  border: 0;
+  height: 5px; /* เพิ่มความหนาของเส้น */
+  background: linear-gradient(to right, #333, #555, #333); /* เปลี่ยนเป็นสีเข้มกว่า */
+  margin: 30px 0; /* ระยะห่างจากหัวข้อ */
+}
+
+/* เปลี่ยนสีลิงค์เป็นสีเหลืองทอง */
+.gold-link {
+  color: #FFD700; /* สีเหลืองทอง */
+  text-decoration: none; /* ลบขีดเส้นใต้ */
+}
+
+.gold-link:hover {
+  color: #FFCC00; /* เปลี่ยนสีเมื่อ hover */
+  text-decoration: underline; /* เพิ่มขีดเส้นใต้เมื่อ hover */
+}
