@@ -1,0 +1,31 @@
+ <div class="container">
+        <!-- Product Item -->
+        <div class="A LA CARTE">
+            <img src="https://scontent.fbkk12-1.fna.fbcdn.net/v/t39.30808-6/450198691_442030225370116_5387108657497760026_n.jpg?_nc_cat=101&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeHN_1UCtrBcgfFs1ZpAQXa8vjnCFvq9U26-OcIW-r1TbowV4FLDPQgq7_de3x7KLBICIzVKmERR7C_mf8-8b3Df&_nc_ohc=Ft0n7Tlu7d8Q7kNvgE2M1q5&_nc_zt=23&_nc_ht=scontent.fbkk12-1.fna&_nc_gid=Aksx9pCnQDeouSZeLB5LH_z&oh=00_AYAwZcOHn4l897Q8vf3Ni1SSMZtUp9-ao9NwiOn9oZkwAQ&oe=674BF3E9" alt="Product 1">
+            <h3>A LA CARTE</h3>
+            <p>รายละเอียด: ซูชิฮามาจิ A LA CARTE</p>
+            <button>ซื้อสินค้า</button>
+        </div>
+        <!-- Product Item -->
+        <div class="COLD PASTA HOTATE">
+            <img src="https://scontent.fbkk12-4.fna.fbcdn.net/v/t39.30808-6/448521251_426317966941342_6206521619806259854_n.jpg?_nc_cat=109&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeH_ezYWFGIUG79icR_SnI9JgGP0VsGWPa2AY_RWwZY9rUodZ4bIUu2hqfHPIsoSZnaH-Yky0SbE4NmItcczFh2D&_nc_ohc=mdWVJsAt4BwQ7kNvgHKrRDz&_nc_zt=23&_nc_ht=scontent.fbkk12-4.fna&_nc_gid=Abu2lZPliiqKCDCZltcvuYf&oh=00_AYC8tWrd9f5bmKwJvXf4QUuiC9aytORzuA79Xo4Y1o2iag&oe=674BF655" alt="Product 2">
+            <h3>COLD PASTA HOTATE</h3>
+            <p>รายละเอียด: PASTA เย็นเห็ดทรัฟเฟิล</p>
+            <button>ซื้อสินค้า</button>
+        </div>
+        <!-- Product Item -->
+        <div class="ONE BITE FOIE GRAS">
+            <img src="https://scontent.fbkk13-2.fna.fbcdn.net/v/t39.30808-6/448551725_426317953608010_5749037073999244133_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeGiFxK0_9YocmpQscgxq9TAVuycscz29kFW7JyxzPb2QTpmQN8u51hPdK7oiQJl9vp9WDLdDdMizyx0uRrTnidE&_nc_ohc=fB2FjNpOToQQ7kNvgHr790w&_nc_zt=23&_nc_ht=scontent.fbkk13-2.fna&_nc_gid=AwzzAe7Olko9gKltdZlKbWo&oh=00_AYBwouo6LMO_vtK2Md2gf6tKtXZgmDdc3likVhkjIWLOfA&oe=674C112B" alt="Product 3">
+            <h3>ONE BITE FOIE GRAS</h3>
+            <p>รายละเอียด: ONE BITE ฟัวกราส์</p>
+            <button>ซื้อสินค้า</button>
+        </div>
+        <!-- Product Item -->
+        <div class="SUMMER OMAKASE">
+            <img src="https://scontent.fbkk12-3.fna.fbcdn.net/v/t39.30808-6/448438228_426317813608024_3524611910107372865_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=833d8c&_nc_eui2=AeFybY0NAZoU6KSm4V_DmD-o8mBehj7M0mzyYF6GPszSbCdx0DXVCVANQW_zd1p3lrHcMoFZt6llg6xNcM7tgMZ7&_nc_ohc=8eeG73G5kbQQ7kNvgGMayzj&_nc_zt=23&_nc_ht=scontent.fbkk12-3.fna&_nc_gid=AksYdk41yRvBOwW_lXqmRLd&oh=00_AYAk2-9N13ccRENZeDfU7GCs561VaiRzZiMBu6IijnI72w&oe=674BF2E7" alt="Product 3">
+            <h3>SUMMER OMAKASE </h3>
+            <p>รายละเอียด: SUMMER OMAKASE</p>
+            <button>ซื้อสินค้า</button>
+        </div>
+</body>
+</html>
