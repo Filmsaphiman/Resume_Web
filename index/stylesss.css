@@ -1,0 +1,573 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'CloudSoft', sans-serif;
+  }
+  
+  @font-face {
+    font-family: 'CloudSoft';
+    src: url('font/CloudSoft-Light.ttf') format('truetype');
+  }
+  
+  body {
+    background-color: antiquewhite;
+  }
+  
+  nav {
+    height: 80px;
+    background: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #813d32;
+    padding: 0 1.5rem;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+  }
+  
+  nav a:hover {
+    color: #fdcc04;
+  }
+  
+  .logo {
+    padding: 0 3rem;
+  }
+  
+  .logo img {
+    max-width: 150px;
+  }
+  
+  .nav-items {
+    display: flex;
+  }
+  
+  .nav-items ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+  }
+  
+  .nav-items ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-items ul li a:hover {
+    color: #813d32;
+  }
+  
+  .hamburger {
+    display: none;
+    position: absolute;
+    right: 1rem;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #813d32;
+    border-radius: 5px;
+    transition: all 0.3s ease;
+  }
+  
+  .hamburger:hover span {
+    background: #fdcc04;
+  }
+  
+  .underline-effect {
+    display: inline-block;
+    position: relative;
+  }
+  
+  .underline-effect::after {
+    content: "";
+    position: absolute;
+    background-color: #fdcc04;
+    height: 3px;
+    width: 0;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.3s ease;
+  }
+  
+  .underline-effect:hover::after {
+    width: 100%;
+  }
+  
+  .hero {
+    background: #ffffff;
+  }
+  
+  .hero-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 75vh;
+    padding: 3rem calc((100vw - 1300px) / 2);
+    gap: 2rem;
+    background-color: antiquewhite;
+  }
+  
+  .hero-service-container {
+    width: 100%;
+    max-width: 1200px;
+    padding: 20px;
+    margin: 0 auto;
+    box-sizing: border-box;
+  }
+  
+  .hero-service-container img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    overflow: hidden;
+  }
+  
+  .column-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    color: #000;
+    padding: 0 4rem;
+    background-color: white;
+    border-radius: 20px;
+  }
+  
+  .column-left h1 {
+    margin-bottom: 1rem;
+    font-size: 3rem;
+  }
+  
+  .column-left p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  
+  .column-right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 2rem;
+  }
+  
+  .column-right img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+  }
+  
+  button {
+    padding: 1rem 3rem;
+    font-size: 1rem;
+    font-weight: bolder;
+    border: none;
+    color: white;
+    background: #813d32;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+  }
+  
+  button:hover {
+    background: #fdcc04;
+    color: #000;
+  }
+  
+  .hero-image {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 2rem;
+    padding: 3rem 2rem;
+    background-color: antiquewhite;
+    margin-bottom: 60px;
+  }
+  
+  .grid-item {
+    background-color: #ffffff;
+    border: 3px solid #813d32;
+    padding: 2rem;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: 0.3s;
+  }
+  
+  .grid-item img {
+    width: 100%;
+    height: auto;
+    max-width: 150px;
+    margin-bottom: 1rem;
+    object-fit: cover;
+  }
+  
+  .grid-item:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  }
+  
+  .grid-item h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .grid-item p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  .service {
+    background-color: antiquewhite;
+    padding: 40px 20px;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: black;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: '';
+    display: block;
+    width: 60px;
+    height: 3px;
+    background-color: #813d32;
+    margin: 20px auto 0;
+  }
+  
+  .learn-more {
+    background-color: #813d32;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+    margin-top: 20px;
+  }
+  
+  .learn-more:hover {
+    background-color: #fdcc04;
+  }
+  
+  footer {
+    background-color: white;
+    color: #813d32;
+    padding: 40px 20px;
+    text-align: center;
+    font-weight: bolder;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1250px;
+    margin: 0 auto;
+  }
+  
+  .footer-logo img {
+    max-width: 150px;
+  }
+  
+  .footer-links ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+  }
+  
+  .footer-links ul li {
+    margin: 0 15px;
+  }
+  
+  .footer-links a {
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+  }
+  
+  .footer-links a:hover {
+    color: #813d32;
+  }
+  
+  .footer-social a {
+    color: #813d32;
+    margin: 0 10px;
+    font-size: 24px;
+  }
+  
+  .footer-social a:hover {
+    color: black;
+  }
+  
+  .footer-bottom {
+    margin-top: 20px;
+  }
+  
+  .footer-bottom p {
+    font-size: 14px;
+  }
+  
+  .affordable-pet-care {
+    padding: 40px;
+    background-color: #f9f9f9;
+    text-align: center;
+  }
+  
+  .affordable-pet-care h2 {
+    font-size: 36px;
+    color: #813d32;
+    margin-bottom: 20px;
+  }
+  
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    justify-items: center;
+    margin-top: 20px;
+  }
+  
+  .hero-affordable-pet-care {
+    background-color: antiquewhite;
+    padding: 20px;
+    text-align: left;
+    margin-bottom: 170px;
+  }
+  
+  .hero-affordable-pet-care .hero-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1550px;
+    margin: 0 auto;
+  }
+  
+  .hero-affordable-pet-care .column-left {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+  }
+  
+  .hero-affordable-pet-care h1 {
+    font-size: 36px;
+    color: #813d32;
+    margin-bottom: 20px;
+    padding: 15px 30px;
+    background-color: #f9f9f9;
+    border: 2px solid #813d32;
+    border-radius: 8px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: 1.4;
+  }
+  
+  .hero-affordable-pet-care p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    color: black;
+  }
+  
+  .hero-affordable-pet-care .column-right {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .hero-affordable-pet-care .column-right img {
+    max-width: 100%;
+    border-radius: 8px;
+  }
+  
+  @media (max-width: 1024px) {
+    .grid {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  
+    .hero-container {
+      grid-template-columns: repeat(1, 1fr);
+    }
+  }
+  
+  @media (max-width: 760px) {
+    .hamburger {
+      display: flex;
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  
+    nav {
+      justify-content: center;
+      position: sticky;
+      padding: 0 1rem;
+    }
+  
+    button {
+      padding: 0.6rem 1.5rem;
+      font-size: 0.8rem;
+    }
+  
+    .logo {
+      position: absolute;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  
+    .nav-items {
+      display: none;
+      position: absolute;
+      top: 80px;
+      right: 0;
+      left: 0;
+      background: #ffffff;
+      flex-direction: column;
+      align-items: center;
+      padding: 1rem;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+  
+    .nav-items.active {
+      display: flex;
+    }
+  
+    .nav-items ul {
+      flex-direction: column;
+      gap: 1rem;
+    }
+  
+    .nav-items ul li {
+      text-align: center;
+    }
+  
+    .hero-container {
+      grid-template-columns: 1fr;
+      flex-direction: column;
+      padding: 2rem;
+      text-align: center;
+      margin-bottom: 15rem;
+    }
+  
+    .column-left {
+      align-items: center;
+      padding: 0;
+    }
+  
+    .column-right {
+      margin: 2rem 0;
+    }
+  
+    .column-right img {
+      max-width: 80%;
+      height: auto;
+      margin: 0 auto;
+      object-fit: cover;
+    }
+  
+    .grid-item img {
+      max-width: 100px;
+    }
+  
+    .grid-container {
+      grid-template-columns: 1fr;
+    }
+  
+    .section-title {
+      font-size: 1.8rem;
+      letter-spacing: 1px;
+    }
+  
+    .hero-affordable-pet-care h1 {
+      font-size: 1.8rem;
+    }
+  
+    .service {
+      padding: 30px 10px;
+    }
+  
+    .hero-service-container {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+      padding: 10px 10px 0 10px;
+      margin: 10px;
+    }
+  
+    .hero-service-container img {
+      height: auto;
+      margin: 0 auto;
+    }
+  
+    .footer-container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .footer-links ul {
+      flex-direction: column;
+      margin-top: 20px;
+    }
+  
+    .footer-links ul li {
+      margin-bottom: 10px;
+    }
+  
+    .footer-social a {
+      font-size: 20px;
+    }
+  
+    .footer-social {
+      margin-top: 20px;
+    }
+  
+    .hero-affordable-pet-care .hero-container {
+      flex-direction: column;
+    }
+  
+    .hero-affordable-pet-care .column-left,
+    .hero-affordable-pet-care .column-right {
+      text-align: center;
+    }
+  
+    .hero-affordable-pet-care .column-right img {
+      max-width: 80%;
+    }
+  
+    .hero-service-container h1,
+    .hero-service-container p {
+      font-size: 1.2rem;
+      text-align: center;
+    }
+  }
+  
